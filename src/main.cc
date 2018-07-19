@@ -96,7 +96,8 @@ void quantize(const std::vector<std::string>& args) {
   fasttext.loadModel(a.output + ".bin");
   fasttext.quantize(a);
   fasttext.saveModel();
-  exit(0);
+  std::cout << "[FastText-C++] Quantization finished." << std::endl;
+  //exit(0);
 }
 
 void printNNUsage() {
